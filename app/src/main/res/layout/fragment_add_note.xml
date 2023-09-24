@@ -26,11 +26,13 @@
             android:id="@+id/note_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="SpeakableTextPresentCheck"
             tools:layout_editor_absoluteX="16dp"
             android:importantForAutofill="no"
-            android:hint="Note title">
+            android:hint="@string/note_title_hint">
 
         </EditText>
 
@@ -41,7 +43,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="60dp"
         android:gravity="top|left"
-        android:hint="Text"
+        android:hint="@string/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

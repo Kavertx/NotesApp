@@ -35,4 +35,6 @@
     <string name="edit_item">Edit Note</string>
     <string name="add_new_item">Add new note</string>
     <string name="note_details_fragment">Note Details</string>
+    <string name="note_title_hint">Note title</string>
+    <string name="text">Text</string>
 </resources>

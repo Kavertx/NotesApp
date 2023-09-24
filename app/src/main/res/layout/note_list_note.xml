@@ -36,7 +36,8 @@
             android:layout_margin="10dp"
             android:background="@color/material_on_primary_emphasis_medium"
             android:gravity="center"
-            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
