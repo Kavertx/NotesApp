@@ -1,4 +1,4 @@
-package com.example.notesattempt.data
+package com.example.notes.data
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow

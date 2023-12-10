@@ -1,8 +1,8 @@
-package com.example.notesattempt
+package com.example.notes
 
 import androidx.lifecycle.*
-import com.example.notesattempt.data.Note
-import com.example.notesattempt.data.NoteDao
+import com.example.notes.data.Note
+import com.example.notes.data.NoteDao
 import kotlinx.coroutines.launch
 
 class NotesViewModel(private val noteDao: NoteDao): ViewModel(){
@@ -25,10 +25,7 @@ class NotesViewModel(private val noteDao: NoteDao): ViewModel(){
     }
 
     fun isEntryValid(noteName: String, noteText: String): Boolean{
-        if(noteName.isNotBlank() && noteText.isNotBlank()){
-            return true
-        }
-        return false
+        return noteName.isNotBlank() && noteText.isNotBlank()
     }
     fun retrieveNote(id: Int): LiveData<Note>{
         return  noteDao.getNote(id).asLiveData()

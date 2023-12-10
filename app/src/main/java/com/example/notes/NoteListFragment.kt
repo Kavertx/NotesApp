@@ -1,4 +1,4 @@
-package com.example.notesattempt
+package com.example.notes
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.notesattempt.databinding.NoteListFragmentBinding
+import com.example.notes.databinding.NoteListFragmentBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.

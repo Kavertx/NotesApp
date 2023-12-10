@@ -1,4 +1,4 @@
-package com.example.notesattempt
+package com.example.notes
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

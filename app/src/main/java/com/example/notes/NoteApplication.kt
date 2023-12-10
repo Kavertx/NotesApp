@@ -1,7 +1,7 @@
-package com.example.notesattempt
+package com.example.notes
 
 import android.app.Application
-import com.example.notesattempt.data.NoteRoomDatabase
+import com.example.notes.data.NoteRoomDatabase
 
 class NoteApplication : Application() {
     // Using by lazy so the database and the repository are only created when they're needed

@@ -1,12 +1,12 @@
-package com.example.notesattempt
+package com.example.notes
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notesattempt.data.Note
-import com.example.notesattempt.databinding.NoteListNoteBinding
+import com.example.notes.data.Note
+import com.example.notes.databinding.NoteListNoteBinding
 
 
 class NoteListAdapter(private val onNoteClicked: (Note) -> Unit) :

@@ -1,4 +1,4 @@
-package com.example.notesattempt
+package com.example.notes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.notesattempt.data.Note
-import com.example.notesattempt.databinding.FragmentNoteDetailBinding
+import com.example.notes.data.Note
+import com.example.notes.databinding.FragmentNoteDetailBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class NoteDetailFragment : Fragment() {
