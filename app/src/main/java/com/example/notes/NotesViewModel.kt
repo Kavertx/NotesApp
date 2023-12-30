@@ -3,6 +3,7 @@ package com.example.notes
 import androidx.lifecycle.*
 import com.example.notes.data.Note
 import com.example.notes.data.NoteDao
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class NotesViewModel(private val noteDao: NoteDao): ViewModel(){
@@ -14,7 +15,7 @@ class NotesViewModel(private val noteDao: NoteDao): ViewModel(){
     }
 
     private fun insert(note: Note){
-    viewModelScope.launch {
+    viewModelScope.launch(Dispatchers.IO) {
         noteDao.insert(note)
         }
     }
@@ -28,7 +29,7 @@ class NotesViewModel(private val noteDao: NoteDao): ViewModel(){
         return noteName.isNotBlank() && noteText.isNotBlank()
     }
     fun retrieveNote(id: Int): LiveData<Note>{
-        return  noteDao.getNote(id).asLiveData()
+        return noteDao.getNote(id).asLiveData()
     }
     private fun getUpdatedNoteEntry(
         noteId: Int,
@@ -50,12 +51,12 @@ class NotesViewModel(private val noteDao: NoteDao): ViewModel(){
         updateNote(updatedNote)
          }
     private fun updateNote(note: Note){
-        viewModelScope.launch{
+        viewModelScope.launch(Dispatchers.IO){
             noteDao.update(note)
         }
     }
     fun deleteNote(note: Note){
-        viewModelScope.launch{
+        viewModelScope.launch(Dispatchers.IO){
             noteDao.delete(note)
         }
     }
